@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+        <!-- Nav tabs -->
+            <!-- <div class="nav1">
+                <div class="logo"></div>
+    <ul class="nav nav-tabs" id="navId" role="tablist">
+        <li class="nav-item">
+            <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab2Id">Action</a>
+                <a class="dropdown-item" href="#tab3Id">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Action</a>
+            </div>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Contact Us</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link Active" data-bs-toggle="tab">Active</a>
+        </li>
+    </ul>
+    </div> -->
+    <div class="nav1">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Beautiful Beaches</a>
+                <div class="nav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel" >
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="./img/beach1.jpg" height="700px" class="w-100 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/baech4.jpg"height="700px" class="w-100 d-block" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/beach2.webp"height="700px" class="w-100 d-block" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+    
+    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script>
+        var triggerEl = document.querySelector('#navId a')
+        bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+    </script>
+    
+  </header>
+  <main>
+
+  </main>
+  <div class="contactus" >
+      <div class="contact">
+          <h1 class="conus">Contact Us</h1>
+          <form>
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" />
+                  <label class="form-label" for="form4Example1">Name</label>
+                </div>
+                
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form4Example2" class="form-control" />
+                    <label class="form-label" for="form4Example2">Email address</label>
+                </div>
+                
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                    <label class="form-label" for="form4Example3">Message</label>
+                </div>
+                
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                    <label class="form-check-label" for="form4Example4">
+                        Send me a copy of this message
+                    </label>
+                </div>
+            </div>
+        </div>
+                <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+       </form>
+    <!-- place footer here -->
+</footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.nav1{
+    background-color: rgb(46, 199, 246);
+}
+.nav{
+    float: right;
+}
+#carouselId{
+    height: 700px;
+}
+.navbar{
+    background-color: rgb(46, 198, 215) !important;
+}
+.conus{
+    text-align: center;
+}
+.contact{
+    margin-top: 100px;
+    /* background-color: rgb(54, 195, 216); */
+    padding: 200px;
+}
+
+/* .contactus{
+      background-color:  rgb(54, 195, 216);;
+} */

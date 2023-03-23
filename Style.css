@@ -66,7 +66,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
+  text-decoration: solid;
+  margin: 5%;
+  color: rgb(147, 143, 143)
+
+  
+  }
 div .g-img {
 width: 400px;
 height: 300px;
@@ -83,7 +88,35 @@ filter: grayscale(1);
 transform: scale(1.03);
 }
 
-
+.about{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: solid;
+  color: rgb(147, 143, 143);
+  margin: 5%;
+    }
+ 
+    div .d-img {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin-left: 5%;
+    transition: 400ms;
+    }
+  div .d-img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+  }
+  .p1{
+    margin-left: 40%;
+    color: bisque;
+    
+  }
 
 
 

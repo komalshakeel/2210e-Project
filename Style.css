@@ -73,8 +73,8 @@ body {
   
   }
 div .g-img {
-width: 400px;
-height: 300px;
+width: 398px;
+height: 298px;
 border: 2px solid #ff3d0036;
 border-radius: 13px;
 box-shadow: 4px 7px 7px 0px #00000042;
@@ -113,8 +113,9 @@ transform: scale(1.03);
     transform: scale(1.03);
   }
   .p1{
-    margin-left: 40%;
+    margin-left: 35%;
     color: bisque;
+    text-indent: 200px;
     
   }
 

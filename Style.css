@@ -99,11 +99,56 @@ div .d-img:hover {
 .card {
   width: 25%;
   /* set the initial width */
- display:inline;
- margin:30px;
+  display: inline;
+  margin: 30px;
+}
 
+.card-slider-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
 
+.card {
+  flex: 100%;
+  scroll-snap-align: start;
+  background-color: #f8f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  font-size: 24px;
+}
 
+.card {
+  width: 280px;
+  height: 350px;
+  background-color: #ccc;
+  margin-left: 70px;
+}
+
+.card-slider {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  width: 1400px;
+}
+
+.card-row {
+  padding: 150px;
+  display: inline-flex;
+  flex-direction: row;
+  scroll-snap-align: start;
+}
+
+.card-slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-prev,
+.slider-next {
+  margin: 0px 130px;
 }
 
 @media (max-width: 576px) {
@@ -113,17 +158,57 @@ div .d-img:hover {
     width: 100%;
   }
 }
-btn{
-  width: 100px;
-  height: 40px;
-  color: rgb(115, 141, 165);
-  font-weight: bold;
-  background-color: rgb(68, 101, 131);
-  margin-left: 70px;
-}
-logo{
+
+.logo{
   width: 10px;
-  height: 20px;
+  height: 15px;
   float: left;
   height: 50px;
+}
+
+:root {
+  --background-dark: #14151a;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #050505 0%, #050508 150%);
+  display: flex;
+  min-height: 50%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+@media(min-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  list-style: none;
+  position: relative;
 }

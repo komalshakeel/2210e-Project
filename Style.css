@@ -201,6 +201,8 @@ div .d-img:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom:  50px;
+  padding: 40px;
 }
 h1{
   color: #81817a;

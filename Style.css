@@ -31,6 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+ 
 }
 
 div .g-img {
@@ -44,7 +45,9 @@ div .g-img {
   transition: 400ms;
   text-decoration: solid;
   margin: 5%;
-  color: rgb(147, 143, 143)
+  color: rgb(147, 143, 143);
+  margin-left: 10%;
+  
 }
 
 div .g-img {
@@ -61,6 +64,7 @@ div .g-img {
 div .g-img:hover {
   filter: grayscale(1);
   transform: scale(1.03);
+  
 }
 
 .about {
@@ -209,7 +213,7 @@ h1{
   margin-bottom: 60px;
 }
 iframe{
-  width: 100px;
+  width: 100%;
   height: 500px;
   filter: invert(100%);
 }

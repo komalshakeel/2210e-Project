@@ -42,66 +42,86 @@
 
 <body>
   <!-- place navbar here -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <div class="navbar navbar-inverse">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">East</a></li>
-              <li><a class="dropdown-item" href="#">West</a></li>
-              <li>
-                <hr class="dropdown-divider">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span
+                class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a href="#" class="navbar-brand">BEAUTIFUL BEACHES</a>
+          </div>
+
+          <div class="navbar-collapse collapse" id="mobile_menu">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">WEST</a></li>
+                  <li><a href="#">EAST</a></li>
+                  <li><a href="#">SOUTH</a></li>
+                  <li><a href="#">NORTH</a></li>
+                </ul>
               </li>
-              <li><a class="dropdown-item" href="#">North</a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-        </ul>
+            <ul class="nav navbar-nav">
+              <li>
+                <form action="" class="navbar-form">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="search" name="search" id="" placeholder="Search Anything Here..."
+                        class="form-control">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <script>
-    document.querySelectorAll('.dropdown-toggle').forEach(item => {
-      item.addEventListener('click', event => {
-
-        if (event.target.classList.contains('dropdown-toggle')) {
-          event.target.classList.toggle('toggle-change');
-        }
-        else if (event.target.parentElement.classList.contains('dropdown-toggle')) {
-          event.target.parentElement.classList.toggle('toggle-change');
-        }
-      })
-    });
-
-  </script>
-  </header>
-  </script>
-
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ -->
+ <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      BEAUTIFUL BEACHES
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="//github.io/jo_geek" target="_blank">HOME</a>
+    <a href="http://stackoverflow.com/users/4084003/" target="_blank">ABOUT US</a>
+    <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">CONTACT US</a>
+    <a href="https://codepen.io/jo_Geek/" target="_blank">GALLERY</a>
+  </div>
+</div>
 
 
 
@@ -116,23 +136,29 @@
       <div class="carousel-item active">
         <img src="./img/topsail east2.jpg" height="750px" width="80%" class="w-100 d-block" alt="First slide">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Title</h3>
-          <p>Description</p>
+          <h3>BEACH</h3>
+          <p>Deep inside the sea, there are high waves that lift boats up and down mightily. The shimmering waves of the
+            sea that are clear and blue mirror the rays of the hot sun. The refreshing breeze that emanates from the
+            seawaters is enjoyable</p></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./img/beach1.jpg" height="750px" width="80%" class="w-100 d-block" alt="Second slide">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Title</h3>
-          <p>Description</p>
+          <h3>BEACH</h3>
+          <p>Deep inside the sea, there are high waves that lift boats up and down mightily. The shimmering waves of the
+            sea that are clear and blue mirror the rays of the hot sun. The refreshing breeze that emanates from the
+            seawaters is enjoyable</p></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./img/south-carolina-hilton-head-island-lighthouse.jpg" height="750px" width="80%"
           class="w-100 d-block" alt="Third slide">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Title</h3>
-          <p>Description</p>
+          <h3>BEACH</h3>
+          <p>Deep inside the sea, there are high waves that lift boats up and down mightily. The shimmering waves of the
+            sea that are clear and blue mirror the rays of the hot sun. The refreshing breeze that emanates from the
+            seawaters is enjoyable</p>
         </div>
       </div>
     </div>
@@ -211,41 +237,41 @@
   <!-- about us -->
 
   <div class="about">
-        <div class="upper">
+    <div class="upper">
       <div class="logo">
-           <div class="image">
-        <div class="camp">
+        <div class="image">
+          <div class="camp">
+          </div>
         </div>
       </div>
+      <div class="info">
+        <h1>ABOUT US</h1>
+        <p>
+          A beach is a narrow, gently sloping strip of land that lies along the edge of an ocean, lake, or river.
+          Materials such as sand, pebbles, rocks, and seashell fragments cover beaches. Most beach materials are the
+          products of weathering and erosion. Over many years, water and wind wear away at the land.
+        </p>
+      </div>
     </div>
-    <div class="info">
-      <h1>ABOUT US</h1>
-      <p>
-        A beach is a narrow, gently sloping strip of land that lies along the edge of an ocean, lake, or river.
-        Materials such as sand, pebbles, rocks, and seashell fragments cover beaches. Most beach materials are the
-        products of weathering and erosion. Over many years, water and wind wear away at the land.
-      </p>
+    <!-- ------------------------------------ -->
+    <div class="lower">
+      <div class="info" id="lower-info">
+        <h1>ABOUT OUR WEBSITE</h1>
+        <p>
+          What Is an 'About Us' Page? In short, it's a page that can inspire people to work with you or buy your
+          products.
+          It can contain (but isn't limited to containing) your brand story, your achievements, and your best
+          testimonials. An About page is not a place to push a hard sell or boast about your business.
+        </p>
+      </div>
+      <div class="slider" id="lower-img">
+        <img src="./img/phi phi 3 SOUTH.jpg" alt="Image" id="slider" />
+      </div>
     </div>
-  </div>
-  <!-- ------------------------------------ -->
-  <div class="lower">
-    <div class="info" id="lower-info">
-      <h1>ABOUT OUR WEBSITE</h1>
-      <p>
-        What Is an 'About Us' Page? In short, it's a page that can inspire people to work with you or buy your products.
-        It can contain (but isn't limited to containing) your brand story, your achievements, and your best
-        testimonials. An About page is not a place to push a hard sell or boast about your business.
-      </p>
-    </div>
-    <div class="slider" id="lower-img">
-      <img src="./img/phi phi 3 SOUTH.jpg" alt="Image" id="slider" />
-    </div>
-  </div>
-  <!-- ------------------------------------ -->
+    <!-- ------------------------------------ -->
   </div>
 
   <!-- cards -->
-
 
   <!--contact us-->
 

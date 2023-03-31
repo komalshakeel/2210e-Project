@@ -29,6 +29,15 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <script src="js"></script>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 
 <body>
@@ -78,16 +87,16 @@
   </nav>
   <script>
     document.querySelectorAll('.dropdown-toggle').forEach(item => {
-  item.addEventListener('click', event => {
- 
-    if(event.target.classList.contains('dropdown-toggle') ){
-      event.target.classList.toggle('toggle-change');
-    }
-    else if(event.target.parentElement.classList.contains('dropdown-toggle')){
-      event.target.parentElement.classList.toggle('toggle-change');
-    }
-  })
-});
+      item.addEventListener('click', event => {
+
+        if (event.target.classList.contains('dropdown-toggle')) {
+          event.target.classList.toggle('toggle-change');
+        }
+        else if (event.target.parentElement.classList.contains('dropdown-toggle')) {
+          event.target.parentElement.classList.toggle('toggle-change');
+        }
+      })
+    });
 
   </script>
   </header>
@@ -200,22 +209,40 @@
   </div>
 
   <!-- about us -->
+
   <div class="about">
-    <h1>About Us</h1>
-  </div>
-  <div>
-    <img class="d-img" src="./img/phi phi 3 SOUTH.jpg" alt="">
-    <div class="p1">
-      <p>A beach is a narrow, gently sloping strip of land that lies along the edge of an ocean, lake, or river.
+        <div class="upper">
+      <div class="logo">
+           <div class="image">
+        <div class="camp">
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h1>ABOUT US</h1>
+      <p>
+        A beach is a narrow, gently sloping strip of land that lies along the edge of an ocean, lake, or river.
         Materials such as sand, pebbles, rocks, and seashell fragments cover beaches. Most beach materials are the
-        products of weathering and erosion. Over many years, water and wind wear away at the land.</p>
-      <p>A beach is a landform alongside a body of water which consists of loose particles. The particles composing a
-        beach are typically made from rock, such as sand, gravel, shingle, pebbles, etc., or biological sources, such as
-        mollusc shells or coralline algae. Sediments settle in different densities and structures, depending on the
-        local wave action and weather, creating different textures, colors and gradients or layers of material.</p>
+        products of weathering and erosion. Over many years, water and wind wear away at the land.
+      </p>
     </div>
   </div>
-
+  <!-- ------------------------------------ -->
+  <div class="lower">
+    <div class="info" id="lower-info">
+      <h1>ABOUT OUR WEBSITE</h1>
+      <p>
+        What Is an 'About Us' Page? In short, it's a page that can inspire people to work with you or buy your products.
+        It can contain (but isn't limited to containing) your brand story, your achievements, and your best
+        testimonials. An About page is not a place to push a hard sell or boast about your business.
+      </p>
+    </div>
+    <div class="slider" id="lower-img">
+      <img src="./img/phi phi 3 SOUTH.jpg" alt="Image" id="slider" />
+    </div>
+  </div>
+  <!-- ------------------------------------ -->
+  </div>
 
   <!-- cards -->
 

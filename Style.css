@@ -451,7 +451,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
   }
   .nav > .nav-btn > label > span {
-    display: block;
+    display: inline;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;

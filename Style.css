@@ -33,7 +33,9 @@ body {
   flex-wrap: wrap;
 
 }
-
+.asd{
+  margin-left: 120px;
+}
 div .g-img {
   width: 400px;
   height: 300px;
@@ -480,4 +482,10 @@ body {
     overflow-y: auto;
   }
 }
-
+.nav-links{
+ float:right;
+}
+.nav{
+  flex: right;
+  
+}
